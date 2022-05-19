@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 1 - CSS Seletores</title>
+    <style type="text/css">
+        body{
+            border: 1px black solid;
+            margin: 5px auto;
+            padding: 5px;
+            width: 800px;
+        }
+        
+        .split {
+            display: inline-flex;
+            align-items: center;
+            flex-direction: column;
+            min-width: 380px;
+        }
+
+        .split .split {
+            min-width: 120px;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+
+CIMA
+</div>
+
+<div>
+    <div class="split">
+        <!-- esquerda -->
+        PARTE DA ESQUERDA
+
+        <div>
+            <div class="split">Lado A Esq</div>
+            <div class="split">Lado A Dir</div>
+        </div>
+
+
+        <div>
+            <div class="split">Divisao 1</div>
+            <div class="split">Divisao 2</div>
+            <div class="split">Divisao 3</div>
+        </div>
+
+
+    </div>
+    <div class="split">
+        <!-- direita -->
+        PARTE DA DIREITA
+    </div>
+    
+</div>
+<div>
+
+    BAIXO
+</div>
+
+</body>
+</html>
